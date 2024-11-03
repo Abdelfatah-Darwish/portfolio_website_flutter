@@ -7,7 +7,7 @@ class SocialIcons extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Positioned(
+    return Positioned(
       right: 5,
       top: Responsive.isMobile(context)
           ? Responsive.heightOfScreen(context) * 0.1
@@ -19,22 +19,18 @@ class SocialIcons extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             SocialIconDesign(
-                socialLink: "https://www.youtube.com/@wtf-code", // link to open
+                socialLink: "abdelfatahdarwish13@gmail.com", // link to open
                 iconUrl: // icon link from google
-                    'https://cdn-icons-png.flaticon.com/512/4096/4096116.png'),
+                    'asset/images/social_icons/4202011_email_gmail_mail_logo_social_icon.png'),
             SocialIconDesign(
-                socialLink: "https://github.com/Nabinji",
-                iconUrl:
-                    'https://cdn-icons-png.freepik.com/256/11023/11023876.png'),
+                socialLink: "https://github.com/Abdelfatah-Darwish",
+                iconUrl: 'asset/images/social_icons/github.png'),
             SocialIconDesign(
-                socialLink:
-                    "https://www.linkedin.com/in/nabin-paudyal-7a3110216/",
-                iconUrl:
-                    'https://static.vecteezy.com/system/resources/previews/016/716/470/non_2x/linkedin-icon-free-png.png'),
+                socialLink: "https://www.linkedin.com/in/abdelfatahdarwish/",
+                iconUrl: 'asset/images/social_icons/linkedin.png'),
             SocialIconDesign(
-                socialLink: "https://www.instagram.com/wtfcode01/",
-                iconUrl:
-                    'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png'),
+                socialLink: "https://wa.me/201063518179",
+                iconUrl: 'asset/images/social_icons/whatsapp1.png'),
           ],
         ),
       ),
@@ -60,7 +56,7 @@ class SocialIconDesign extends StatelessWidget {
           Uri.parse(socialLink),
         );
       },
-      child: Image.network(
+      child: Image.asset(
         iconUrl,
         fit: BoxFit.cover,
       ),
