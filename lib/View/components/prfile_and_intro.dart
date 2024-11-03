@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_website_flutter/Responsive/responsive.dart';
+
 class ProfileAndIntro extends StatelessWidget {
   const ProfileAndIntro({super.key});
 
@@ -17,7 +18,7 @@ class ProfileAndIntro extends StatelessWidget {
               height: Responsive.isMobile(context)
                   ? Responsive.heightOfScreen(context) / 3
                   : Responsive.heightOfScreen(context) - 70,
-              child: Image.asset("asset/images/profile-image.png"),
+              child: Image.asset("asset/images/profile_image.png"),
             ),
             SizedBox(
               width: Responsive.isMobile(context)
@@ -35,8 +36,8 @@ class ProfileAndIntro extends StatelessWidget {
                       : 450,
                   child: DecoratedBox(
                     decoration: BoxDecoration(
-                      boxShadow: const[
-                         BoxShadow(
+                      boxShadow: const [
+                        BoxShadow(
                           color: Colors.grey,
                           blurRadius: 8,
                           spreadRadius: 5,
@@ -45,7 +46,7 @@ class ProfileAndIntro extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10),
                       color: Colors.white,
                     ),
-                    child:  Padding(
+                    child: Padding(
                       padding: const EdgeInsets.all(20),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -54,7 +55,7 @@ class ProfileAndIntro extends StatelessWidget {
                           Text(
                             "Hello!",
                             style: TextStyle(
-                              fontSize: Responsive.isMobile(context)?36:40,
+                              fontSize: Responsive.isMobile(context) ? 36 : 40,
                               color: Colors.red,
                               fontWeight: FontWeight.w800,
                             ),

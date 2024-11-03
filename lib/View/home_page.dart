@@ -24,7 +24,7 @@ class DeveloperPortFolio extends StatelessWidget {
       appBar: AppBar(
         centerTitle: false,
         title: const Text(
-          "Nabin Paudyal",
+          "Abdelfatah Darwish",
           style: TextStyle(
             fontSize: 26,
             fontWeight: FontWeight.w900,
