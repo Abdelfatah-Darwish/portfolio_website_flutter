@@ -61,7 +61,7 @@ class ProfileAndIntro extends StatelessWidget {
                             ),
                           ),
                           const Text(
-                            "I'm Nabin Paudyal,\na Developer & Content Creator\nSpecializing in Flutter App Decelopemnt and UI Design.",
+                            "I'm Abdelfatah Darwish,\na Software Engineer\nSpecializing in Flutter App Development.",
                             style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.w500,
