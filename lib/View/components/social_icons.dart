@@ -21,7 +21,7 @@ class SocialIcons extends StatelessWidget {
             SocialIconDesign(
                 socialLink: "abdelfatahdarwish13@gmail.com", // link to open
                 iconUrl: // icon link from google
-                    'asset/images/social_icons/4202011_email_gmail_mail_logo_social_icon.png'),
+                    'asset/images/social_icons/mail.png'),
             SocialIconDesign(
                 socialLink: "https://github.com/Abdelfatah-Darwish",
                 iconUrl: 'asset/images/social_icons/github.png'),

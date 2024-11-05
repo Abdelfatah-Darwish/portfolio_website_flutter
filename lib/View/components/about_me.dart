@@ -22,7 +22,7 @@ class AboutMe extends StatelessWidget {
             ),
           ),
           Text(
-            "Hello! I'm Nabin Paudayl,a passionate Flutter developer specializing in Flutter, Firebase, API integration, and UI design. With a keen eye for detail and a drive for excellence, I strive to create seamless and engaging mobile applications.\n\nIn addition to my development work, I share my knowledge and expertise through educational videos on YouTube, helping others to learn and grow in the field of Flutter development.\n\nThank you for visiting my portfolio. Feel free to explore my projects and reach out if you'd like to connect!",
+            "Hey there! I’m Abdelfatah Darwish, a computer science graduate who’s all about building useful, high-quality apps with Flutter. I love creating software that actually makes a difference in people’s lives.\n\n I’m currently on the lookout for opportunities to work or train with a great team where I can contribute to impactful projects and keep growing as a developer.\n\nThank you for visiting my portfolio. Feel free to explore my projects and reach out if you'd like to connect!",
             style: TextStyle(
               fontSize: Responsive.isMobile(context) ? 18 : 20,
             ),
