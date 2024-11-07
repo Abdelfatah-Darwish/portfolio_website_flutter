@@ -1,9 +1,48 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_website_flutter/Responsive/responsive.dart';
-import 'package:portfolio_website_flutter/Utils/colors.dart';
+import 'package:url_launcher/url_launcher.dart';
 
-class ContactForm extends StatelessWidget {
+class ContactForm extends StatefulWidget {
   const ContactForm({super.key});
+
+  @override
+  _ContactFormState createState() => _ContactFormState();
+}
+
+class _ContactFormState extends State<ContactForm> {
+  final TextEditingController nameController = TextEditingController();
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController phoneController = TextEditingController();
+  final TextEditingController messageController = TextEditingController();
+
+  // Function to launch email client
+  Future<void> sendEmail() async {
+    final String name = nameController.text;
+    final String email = emailController.text;
+    final String phone = phoneController.text;
+    final String message = messageController.text;
+
+    final String subject = 'Contact Form Submission from $name';
+    final String body =
+        'Name: $name\nEmail: $email\nPhone: $phone\nMessage: $message';
+
+    final Uri mailtoUri = Uri(
+      scheme: 'mailto',
+      path: 'abdelfatahdarwish13@gmail.com',
+      queryParameters: {
+        'subject': subject,
+        'body': body,
+      },
+    );
+
+    if (await canLaunchUrl(mailtoUri)) {
+      await launchUrl(mailtoUri);
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Could not open email client')),
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +64,7 @@ class ContactForm extends StatelessWidget {
             decoration: BoxDecoration(
               boxShadow: const [
                 BoxShadow(
-                  color: shadoColor,
+                  color: Colors.grey,
                   blurRadius: 4,
                   spreadRadius: 2,
                 ),
@@ -37,10 +76,12 @@ class ContactForm extends StatelessWidget {
               padding: const EdgeInsets.all(20),
               child: Column(
                 children: [
-                  contactFormField("Name*", 1, "Your Name"),
-                  contactFormField("Email*", 1, "Your Email"),
-                  contactFormField("Phone Number", 1, "Your Number"),
-                  contactFormField("Message*", 10, "Your Message"),
+                  contactFormField("Name*", 1, "Your Name", nameController),
+                  contactFormField("Email*", 1, "Your Email", emailController),
+                  contactFormField(
+                      "Phone Number", 1, "Your Number", phoneController),
+                  contactFormField(
+                      "Message*", 10, "Your Message", messageController),
                   Row(
                     children: [
                       Expanded(
@@ -48,7 +89,7 @@ class ContactForm extends StatelessWidget {
                           style: OutlinedButton.styleFrom(
                             backgroundColor: Colors.blue,
                           ),
-                          onPressed: () {},
+                          onPressed: sendEmail, // Launch the email client
                           child: const Text(
                             "Submit",
                             style: TextStyle(
@@ -70,14 +111,15 @@ class ContactForm extends StatelessWidget {
     );
   }
 
-  contactFormField(name, maxLine, hintText) {
+  contactFormField(String label, int maxLines, String hintText,
+      TextEditingController controller) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 10),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            name,
+            label,
             style: const TextStyle(
               fontSize: 18,
               color: Colors.blue,
@@ -87,18 +129,20 @@ class ContactForm extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 8),
             child: TextField(
-              maxLines: maxLine,
+              controller: controller,
+              maxLines: maxLines,
               decoration: InputDecoration(
-                  hintText: hintText,
-                  border: const OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Colors.blue,
-                    ),
+                hintText: hintText,
+                border: const OutlineInputBorder(
+                  borderSide: BorderSide(
+                    color: Colors.blue,
                   ),
-                  contentPadding: const EdgeInsets.symmetric(
-                    horizontal: 10,
-                    vertical: 5,
-                  )),
+                ),
+                contentPadding: const EdgeInsets.symmetric(
+                  horizontal: 10,
+                  vertical: 5,
+                ),
+              ),
             ),
           ),
         ],
