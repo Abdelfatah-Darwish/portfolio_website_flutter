@@ -16,16 +16,20 @@ class _ContactFormState extends State<ContactForm> {
   final TextEditingController messageController = TextEditingController();
 
   // Function to launch email client
+
   Future<void> sendEmail() async {
+    // Get the values from your form's text controllers
     final String name = nameController.text;
     final String email = emailController.text;
     final String phone = phoneController.text;
     final String message = messageController.text;
 
+    // Compose the email details
     final String subject = 'Contact Form Submission from $name';
     final String body =
         'Name: $name\nEmail: $email\nPhone: $phone\nMessage: $message';
 
+    // Create the mailto URI with subject and body
     final Uri mailtoUri = Uri(
       scheme: 'mailto',
       path: 'abdelfatahdarwish13@gmail.com',
@@ -35,11 +39,17 @@ class _ContactFormState extends State<ContactForm> {
       },
     );
 
+    // Check if there's an app available to handle mailto links
     if (await canLaunchUrl(mailtoUri)) {
-      await launchUrl(mailtoUri);
+      // Use externalApplication mode to open the default email client outside your app
+      await launchUrl(mailtoUri, mode: LaunchMode.externalApplication);
     } else {
+      // If no app is found, show an error message in a SnackBar
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Could not open email client')),
+        const SnackBar(
+          content: Text('There are problems, please try again later'),
+          //backgroundColor: Colors.red,
+        ),
       );
     }
   }
