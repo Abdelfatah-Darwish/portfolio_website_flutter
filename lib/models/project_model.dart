@@ -14,19 +14,19 @@ class ProjectModel {
 List<ProjectModel> projects = [
   ProjectModel(
     description:
-        "A Simple Chat App in Flutter can provide real-time messaging capabilities without using complex state management solutions like the Provider package. Features:User Authentication: Basic login and signup functionality.Real-time Messaging: Users can send and receive text messages.User Interface: Simple and user-friendly interface.Real-time Updates: Use Firebase Firestore for live message updates.",
+        "Diva is a Flutter-based e-commerce app designed for a smooth and enjoyable shopping experience. It features essentials like Firebase for secure logins, a dynamic product catalog, dark mode, and payment integration. Users can manage favorites and cart items locally, enjoy smooth Lottie animations, and experience a fully responsive design that looks great on any device.",
     imgURL: 'assets/images/resent_projects/diva_ecommerce_app.png',
     projectName: 'Diva E-commerce App',
   ),
   ProjectModel(
     description:
-        "An E-commerce App using the Provider package in Flutter allows users to browse, search, and purchase products. The Provider package manages the state of the application, ensuring smooth navigation and data updates across different parts of the app.",
+        "Bookly is a Flutter app for discovering and managing reading lists, offering features like personalized book recommendations, customizable booklists, and detailed book information. Built with MVVM architecture and state management using Bloc, it includes search functionality, animations, robust error handling, and clean UI design for an enjoyable reading experience.",
     imgURL: 'assets/images/resent_projects/bookly_app.png',
     projectName: 'Bookly App',
   ),
   ProjectModel(
     description:
-        "A Quiz App in Flutter allows users to take a quiz with questions fetched from an external API. Each question is displayed with a countdown timer, and users must answer within the time limit. At the end of the quiz, the app calculates and displays the user's score.",
+        "BMI Calculator is a cross-platform health app built with Flutter and Dart for iOS and Android. Enter your gender, height, weight, and age to calculate your BMI and receive health insights. With a user-friendly interface and customizable options, it offers an intuitive experience for managing health metrics.",
     imgURL: 'assets/images/resent_projects/bmi_calculator.png',
     projectName: 'BMI Calculator App',
   ),
