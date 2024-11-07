@@ -22,23 +22,24 @@ class RecentProject extends StatelessWidget {
           children: [
             ProjectCard(
               projectModel: projects[0],
-              url: "https://youtu.be/Rkjr4m3SMyo?si=g-mg8KAlXYJ6mv4G",
+              url:
+                  "https://github.com/Abdelfatah-Darwish/Shopping-App/tree/main",
             ),
             ProjectCard(
               projectModel: projects[1],
-              url: "https://youtu.be/UHUSqJDKe-Q?si=qRQugB6fyxt6fgOT",
+              url: "https://github.com/Abdelfatah-Darwish/bookly_app",
             ),
             ProjectCard(
               projectModel: projects[2],
-              url: "https://youtu.be/RSFj5HimAd4?si=ZZdpsfq6XzFIrcgH",
+              url: "https://github.com/Abdelfatah-Darwish/BMI-Calculator",
             ),
             ProjectCard(
               projectModel: projects[3],
-              url: "https://youtu.be/PYSg0_lfff4?si=rTkkMgZI2P22ODf6",
+              url: "https://github.com/Abdelfatah-Darwish/weather_app",
             ),
             ProjectCard(
               projectModel: projects[4],
-              url: "https://youtu.be/qc-2JZ42Uz8?si=E4P7TQ1hCFMRFk55",
+              url: "https://github.com/Abdelfatah-Darwish/news-app",
             ),
           ],
         )
