@@ -19,7 +19,8 @@ class SocialIcons extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             SocialIconDesign(
-                socialLink: "abdelfatahdarwish13@gmail.com", // link to open
+                socialLink:
+                    "mailto:abdelfatahdarwish13@gmail.com", // link to open
                 iconUrl: // icon link from google
                     'assets/images/social_icons/mail.png'),
             SocialIconDesign(
