@@ -21,16 +21,16 @@ class SocialIcons extends StatelessWidget {
             SocialIconDesign(
                 socialLink: "abdelfatahdarwish13@gmail.com", // link to open
                 iconUrl: // icon link from google
-                    'asset/images/social_icons/mail.png'),
+                    'assets/images/social_icons/mail.png'),
             SocialIconDesign(
                 socialLink: "https://github.com/Abdelfatah-Darwish",
-                iconUrl: 'asset/images/social_icons/github.png'),
+                iconUrl: 'assets/images/social_icons/github.png'),
             SocialIconDesign(
                 socialLink: "https://www.linkedin.com/in/abdelfatahdarwish/",
-                iconUrl: 'asset/images/social_icons/linkedin.png'),
+                iconUrl: 'assets/images/social_icons/linkedin.png'),
             SocialIconDesign(
                 socialLink: "https://wa.me/201063518179",
-                iconUrl: 'asset/images/social_icons/whatsapp1.png'),
+                iconUrl: 'assets/images/social_icons/whatsapp1.png'),
           ],
         ),
       ),

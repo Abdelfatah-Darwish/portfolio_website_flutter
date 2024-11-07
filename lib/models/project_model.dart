@@ -15,31 +15,31 @@ List<ProjectModel> projects = [
   ProjectModel(
     description:
         "A Simple Chat App in Flutter can provide real-time messaging capabilities without using complex state management solutions like the Provider package. Features:User Authentication: Basic login and signup functionality.Real-time Messaging: Users can send and receive text messages.User Interface: Simple and user-friendly interface.Real-time Updates: Use Firebase Firestore for live message updates.",
-    imgURL: 'asset/images/resent_projects/diva_ecommerce_app.png',
+    imgURL: 'assets/images/resent_projects/diva_ecommerce_app.png',
     projectName: 'Diva E-commerce App',
   ),
   ProjectModel(
     description:
         "An E-commerce App using the Provider package in Flutter allows users to browse, search, and purchase products. The Provider package manages the state of the application, ensuring smooth navigation and data updates across different parts of the app.",
-    imgURL: 'asset/images/resent_projects/bookly_app.png',
+    imgURL: 'assets/images/resent_projects/bookly_app.png',
     projectName: 'Bookly App',
   ),
   ProjectModel(
     description:
         "A Quiz App in Flutter allows users to take a quiz with questions fetched from an external API. Each question is displayed with a countdown timer, and users must answer within the time limit. At the end of the quiz, the app calculates and displays the user's score.",
-    imgURL: 'asset/images/resent_projects/bmi_calculator.png',
+    imgURL: 'assets/images/resent_projects/bmi_calculator.png',
     projectName: 'BMI Calculator App',
   ),
   ProjectModel(
     description:
         "A Weather App using an API fetches and displays real-time weather data for various locations. Users can view current weather conditions, forecasts, and severe weather alerts. The app often includes features like hourly and weekly forecasts, weather maps, and the ability to save favorite locations for quick access.",
-    imgURL: 'asset/images/resent_projects/weather_app.png',
+    imgURL: 'assets/images/resent_projects/weather_app.png',
     projectName: 'Weather App',
   ),
   ProjectModel(
     description:
         "A News App using an API provides users with the latest news articles and updates by fetching data from various news sources. The app can categorize news by topics such as sports, technology, politics, and entertainment, and often includes features like search, bookmarking, and push notifications for breaking news",
-    imgURL: 'asset/images/resent_projects/news.png',
+    imgURL: 'assets/images/resent_projects/news.png',
     projectName: 'News App',
   ),
 ];
