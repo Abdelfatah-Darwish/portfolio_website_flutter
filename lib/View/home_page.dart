@@ -75,7 +75,7 @@ class DeveloperPortFolio extends StatelessWidget {
                   const SizedBox(height: 55),
                   const ContactForm(),
                   const SizedBox(height: 55),
-                  const Footer(),
+                  // const Footer(),
                   const SizedBox(
                     height: 30,
                   ),

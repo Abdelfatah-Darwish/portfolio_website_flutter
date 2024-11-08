@@ -16,12 +16,15 @@ class Footer extends StatelessWidget {
               "Built with ❤ by",
             ),
             TextButton(
-                onPressed: () {
-                  launchUrl(Uri.parse("https://www.facebook.com/nabin.paudyal.57"),);
-                },
-                child: const Text(
-                  "Nabin Paudyal",
-                ))
+              onPressed: () {
+                launchUrl(
+                  Uri.parse("https://www.linkedin.com/in/abdelfatahdarwish/"),
+                );
+              },
+              child: const Text(
+                "Abdelfatah Darwish",
+              ),
+            )
           ],
         )
       ],
