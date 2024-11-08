@@ -21,7 +21,7 @@ List<ProjectModel> projects = [
   ProjectModel(
     description:
         "Bookly is a Flutter app for discovering and managing reading lists, offering features like personalized book recommendations, customizable booklists, and detailed book information. Built with MVVM architecture and state management using Bloc, it includes search functionality, animations, robust error handling, and clean UI design for an enjoyable reading experience.",
-    imgURL: 'assets/images/resent_projects/bookly_app.png',
+    imgURL: 'assets/images/resent_projects/background.jpg',
     projectName: 'Bookly App',
   ),
   ProjectModel(
