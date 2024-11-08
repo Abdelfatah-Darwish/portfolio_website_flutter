@@ -55,6 +55,11 @@ class ProjectCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double imageHeight = Responsive.isMobile(context) ? 150 : 200;
+    //double imageWidth = Responsive.isMobile(context) ? 150 : 400;
+    double imageWidth = Responsive.isMobile(context)
+        ? Responsive.widthOfScreen(context) * 0.9
+        : Responsive.widthOfScreen(context) / 4;
     return Padding(
       padding: const EdgeInsets.all(15),
       child: DecoratedBox(
@@ -73,7 +78,17 @@ class ProjectCard extends StatelessWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.all(10),
-                child: Image.asset(projectModel.imgURL),
+                child: SizedBox(
+                  height: imageHeight,
+                  width: imageWidth,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(10),
+                    child: Image.asset(
+                      projectModel.imgURL,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
               ),
               Text(
                 projectModel.projectName,
@@ -106,7 +121,7 @@ class ProjectCard extends StatelessWidget {
                     );
                   },
                   child: const Text(
-                    "Check In Out",
+                    "Check It Out",
                     style: TextStyle(fontSize: 17),
                   ),
                 ),
