@@ -25,7 +25,7 @@ class TopSkills extends StatelessWidget {
           ),
           child: const Wrap(
             children: [
-             SkillCard(
+              SkillCard(
                 url:
                     'https://cdn.iconscout.com/icon/free/png-256/flutter-2038877-1720090.png',
               ),
@@ -33,9 +33,9 @@ class TopSkills extends StatelessWidget {
                 url:
                     'https://avatars.githubusercontent.com/u/1609975?s=280&v=4',
               ),
-              SkillCard(
-                  url:
-                      'https://miro.medium.com/v2/resize:fit:300/1*R4c8lHBHuH5qyqOtZb3h-w.png'),
+              // SkillCard(
+              //     url:
+              //         'https://miro.medium.com/v2/resize:fit:300/1*R4c8lHBHuH5qyqOtZb3h-w.png'),
               SkillCard(
                   url:
                       'https://cdn-icons-png.flaticon.com/512/1493/1493169.png'),
@@ -84,7 +84,7 @@ class SkillCard extends StatelessWidget {
             padding: Responsive.isMobile(context)
                 ? const EdgeInsets.all(10)
                 : const EdgeInsets.all(30),
-                child: Image.network(url),
+            child: Image.network(url),
           ),
         ),
       ),
