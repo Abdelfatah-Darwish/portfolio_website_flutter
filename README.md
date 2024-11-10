@@ -2,6 +2,10 @@
 
 Welcome to my Flutter Portfolio! This project showcases my skills in building mobile applications with Flutter, focusing on clean and modern UI design, smooth navigation, and responsive layouts.
 
+## 🌐 Live Demo
+
+You can explore the live version of the website [Click to see live demo](https://abdelfatah-darwish.github.io/).
+
 ## 📝 Features
 
 - Beautiful UI/UX: Clean and visually appealing user interfaces.
